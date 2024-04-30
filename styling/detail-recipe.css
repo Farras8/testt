@@ -1,0 +1,131 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    color: black;
+    background-color: #E4DAA9;
+}
+
+.imglogo {
+    height: 100px;
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(177, 169, 128, 0.7);
+    border-bottom: 1px solid #9e9a9a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+}
+
+.back-to-home {
+    margin-top: 9em;
+    margin-left: 2em;
+}
+
+.back-to-home a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #797355;
+    text-decoration: none;
+    color: rgba(27, 122, 110, 0.7);
+}
+
+.back-to-home a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Styles for mobile and tablets */
+
+
+
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu:hover {
+        transform: scale(1.2);
+    }
+
+    nav .Navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(18, 189, 166, 0.7);
+        width: 20rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    nav .Navbar.active {
+        right: 0;
+    }
+
+    nav .Navbar a {
+        color: black;
+        display: block;
+        margin: 1.75rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu:hover {
+        transform: scale(1.2);
+    }
+
+    nav .Navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(18, 189, 166, 0.7);
+        width: 20rem;
+        height: 100vh;
+    }
+
+    nav .Navbar.active {
+        right: 0;
+    }
+
+    nav .Navbar a {
+        color: black;
+        display: block;
+        margin: 1.75rem;
+        padding: 0.5rem;
+    }
+
+}

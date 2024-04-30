@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivasta - HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styling/LP.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="image/King_Culinary_Logo-removebg-preview.png" class="imglogo" alt="logo">
+        </div>
+        <div class="Navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addRecipe.html">Upload Recipe</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="cmenu">
+            <a href="browseBy.html" id="search"><i data-feather="search"></i></a>
+            <a href="login.html" class="btn-login">LOGIN</a>
+            <a href="" id="user"><i data-feather="user"></i></a>
+            <a href="" id="menu"><i data-feather="menu"></i></a>
+        </div>
+
+    </nav>
+ 
+    <!-- Image Slide -->
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="image/image slide 2.avif" alt="">
+                <div class="slide-text">Welcome to King Culinary Website</div>
+            </div>
+            <div class="item">
+                <img src="image/image slide 1.avif" alt="">
+                <div class="slide-text">Easy to Search</div>
+            </div>
+            <div class="item">
+                <img src="image/image-slide 3.jpg" alt="">
+                <div class="slide-text">Sharing Recipe to The World</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!--Browse-By Section-->
+    <section class="Browse-By">
+        <h1 class="br-title">Browse <span class="title-span">By</span></h1>
+        <div class="br-img-list">
+            <div class="br-img-card">
+                <img class="br-img-item" src="image/breakfast title.jpeg" alt="img-1" />
+                <div class="br-img-text">Breakfast</div>
+            </div>
+            <div class="br-img-card">
+                <img class="br-img-item" src="image/dinner title.jpeg" alt="img-1" />
+                <div class="br-img-text">Dinner</div>
+            </div>
+            <div class="br-img-card">
+                <img class="br-img-item" src="image/slow-cooker-roast-lamb-98513-1.jpeg" alt="img-1" />
+                <div class="br-img-text">Lunch</div>
+            </div>
+            <div class="br-img-card">
+                <img class="br-img-item" src="image/slow-cooker-roast-lamb-98513-1.jpeg" alt="img-1" />
+                <div class="br-img-text">Brunch</div>
+            </div>
+            <div class="br-img-card">
+                <img class="br-img-item" src="image/slow-cooker-roast-lamb-98513-1.jpeg" alt="img-1" />
+                <div class="br-img-text">Desserts</div>
+            </div>
+        </div>
+        <a href="browseBy.html" class="br-btn-more-recipe">More</a>
+    </section>
+
+    <!--Upload Recipe Section-->
+    <section class="up-recipe">
+        <h1 class="up-recipe-title">Upload <span class="title-span">Recipe</span></h1>
+        <div class="up-recipe-card">
+            <div class="up-recipe-card-atas">
+                <div class="up-recipe-image">
+                    <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="img-1">
+                </div>
+                <div class="up-recipe-word">
+                    Buat kalimat Persuasif agar user bisa tertarik untuk membuat resep
+                </div>
+            </div>
+            <div class="up-recipe-btn">
+                <a href="#" class="">Upload Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Latest Recipe-->
+    <section class="latest-recipe">
+        <h1 class="latest-recipe-title">Latest <span class="title-span">Recipe</span></h1>
+        <div class="latest-recipe-img-list">
+            <div class="latest-recipe-img-card">
+                <div class="latest-recipe-image-container">
+                    <a href="detail-recipe.html"><img class="latest-recipe-img-item" src="image/breakfast title.jpeg" alt="img-1" /></a>
+                    <i data-feather="heart" class="love-icon"></i>
+                </div>
+                <div class="latest-recipe-img-text">Nama Makanan</div>
+            </div>
+            <div class="latest-recipe-img-card">
+                <div class="latest-recipe-image-container">
+                    <img class="latest-recipe-img-item" src="image/breakfast title.jpeg" alt="img-1" />
+                    <i data-feather="heart" class="love-icon"></i>
+                </div>
+                <div class="latest-recipe-img-text">Nama Makanan</div>
+            </div>
+            <div class="latest-recipe-img-card">
+                <div class="latest-recipe-image-container">
+                    <img class="latest-recipe-img-item" src="image/breakfast title.jpeg" alt="img-1" />
+                    <i data-feather="heart" class="love-icon"></i>
+                </div>
+                <div class="latest-recipe-img-text">Nama Makanan</div>
+            </div>
+            <div class="latest-recipe-img-card">
+                <div class="latest-recipe-image-container">
+                    <img class="latest-recipe-img-item" src="image/breakfast title.jpeg" alt="img-1" />
+                    <i data-feather="heart" class="love-icon"></i>
+                </div>
+                <div class="latest-recipe-img-text">Nama Makanan</div>
+            </div>
+            <div class="latest-recipe-img-card">
+                <div class="latest-recipe-image-container">
+                    <img class="latest-recipe-img-item" src="image/breakfast title.jpeg" alt="img-1" />
+                    <i data-feather="heart" class="love-icon"></i>
+                </div>
+                <div class="latest-recipe-img-text">Nama Makanan</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2024 King Culinary. All rights reserved.</p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+
+            $(".Navbar ul li a").click(function (e) {
+                e.preventDefault();
+                var targetUrl = $(this).attr("href");
+                $("body").animate({ opacity: 0, marginTop: "100px" }, 500, function () {
+                    window.location.href = targetUrl;
+                });
+            });
+            $("body").animate({ opacity: 1, marginTop: "0" }, 500);
+        });
+    </script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

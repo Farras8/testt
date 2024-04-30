@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title"register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styling/register.css">
+</head>
+
+<body>
+    <div class="register">
+        <form action="" class="register-form">
+            <h1 class="register-title">Sign Up</h1>
+            <div class="register-content">
+                <div class="register-box">
+                    <i data-feather="mail" class="user-icon"></i>
+                    <div class="register-box-input">
+                        <input type="email" required class="register-input" id="register-email" placeholder=" ">
+                        <label for="register-email" class="register-label">Email</label>
+                    </div>
+                </div>
+                <div class="register-box">
+                    <i data-feather="user" class="pw-icon"></i>
+                    <div class="register-box-input">
+                        <input type="text" required class="register-input" id="register-user" placeholder=" ">
+                        <label for="register-pass" class="register-label">Username</label>
+                    </div>
+                </div>
+                <div class="register-box">
+                    <i data-feather="lock" class="pw-icon"></i>
+                    <div class="register-box-input">
+                        <input type="password" required class="register-input" id="register-pass" placeholder=" ">
+                        <label for="register-pass" class="register-label">Password</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="register-button">Sign Up</button>
+            <p class="register-register">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+    <script>
+        feather.replace()
+    </script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

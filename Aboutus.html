@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivasta - About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styling/Aboutus.css">
+</head>
+<body>
+<!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="image/King_Culinary_Logo-removebg-preview.png" class="imglogo" alt="logo">
+        </div>
+        <div class="Navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addRecipe.html">Upload Recipe</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="cmenu">
+            <a href="" id="user"><i data-feather="user"></i></a>
+            <a href="" id="menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+<!-- About Us -->
+<section class="AboutUs" id="Aboutus">
+    <h2><span class="span-title">About </span>Us</h2>
+    <div class="contentABoutUs">
+        <div class="imageAboutus">
+            <img src="image/King_Culinary_Logo-removebg-preview.png" class="logo" alt="logo">
+        </div>
+        <div class="contentImage">
+            <p><span>Welcome to King Culinary,</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi nec nisi fermentum, ac fermentum justo eleifend. 
+                Donec ut tristique tortor. Integer in nisl pretium, placerat velit sit amet, fermentum nisi. Nam id neque vel turpis semper accumsan. Maecenas consequat, ligula nec 
+                facilisis tempor, mauris odio congue nisl, nec efficitur metus magna vel velit. Vivamus condimentum arcu eu sodales ullamcorper</p>
+        </div>
+    </div>
+    <div class="founders">
+        <h2><span class="span-title">Meet </span> <span class="span-title-2">Our</span> Team</h2>
+        <div class="content">
+            <div class="card">
+                <img src="image/Image-Farras-1.jpg" class="imageContent">
+                <div class="cardbody">
+                    <h4>Farras</h4>
+                    <h6>Chief Operating Officer</h6>
+                    <div class="iconSosmed">    
+                        <a href="https://www.instagram.com/farrasyasyfa/" target="_blank" class="instagram"><i data-feather="instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/farras-yasyfa-5768981b2/" target="_blank" class="linkedin"><i data-feather="linkedin"></i></a>
+                    </div>  
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/Image-Gheryl.jpg" class="imageContent">
+                <div class="cardbody">
+                    <h4>Gheryl</h4>
+                    <h6>FOUNDER/CEO</h6>
+                    <div class="iconSosmed"> 
+                        <a href="#" target="_blank" class="instagram"><i data-feather="instagram"></i></a>
+                        <a href="#" target="_blank" class="linkedin"><i data-feather="linkedin"></i></a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 King Culinary. All rights reserved.</p>
+</footer>
+<script>
+$(document).ready(function() {
+    
+    $(".Navbar ul li a").click(function(e) {
+        e.preventDefault(); 
+        var targetUrl = $(this).attr("href");    
+        $("body").animate({ opacity: 0, marginTop: "100px" }, 500, function() {
+                window.location.href = targetUrl;
+            });
+        });
+        $("body").animate({ opacity: 1, marginTop: "0" }, 500);
+});
+</script>
+<script>
+    feather.replace()
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

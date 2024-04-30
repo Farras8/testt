@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivasta - HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styling/addRecipe.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="image/King_Culinary_Logo-removebg-preview.png" class="imglogo" alt="logo">
+        </div>
+        <div class="Navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addRecipe.html">Upload Recipe</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="cmenu">
+            <a href="" id="user"><i data-feather="user"></i></a>
+            <a href="" id="menu"><i data-feather="menu"></i></a>
+        </div>
+
+    </nav>
+
+    <h2>Add Your Own Recipe</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="photo">Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/jpeg, image/webp, image/jpg, image/png" required>
+        <div id="photo-preview" style="margin-top: 10px;"></div>
+
+        <label for="recipe_name">Recipe Name:</label><br>
+        <input type="text" id="recipe_name" name="recipe_name" placeholder="Enter Food's Name" required><br><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+            <option value="snack">Snack</option>
+        </select><br><br>
+
+        <label for="ingredients">Ingredients:</label><br>
+        <div id="ingredients_container">
+            <input type="text" name="ingredient[]" placeholder="Add Ingredient" required>
+            <button type="button" onclick="addIngredient(this)">Add Ingredient</button>
+        </div><br><br>
+
+        <label for="cooking_steps">Cooking Steps:</label><br>
+        <div id="cooking_steps_container">
+            <textarea name="cooking_step[]" rows="4" cols="50" placeholder="Add Cooking Step" required></textarea>
+            <button type="button" onclick="addCookingStep(this)">Add Cooking Step</button>
+        </div><br><br>
+
+        <div class="button-container">
+            <button type="submit" id="save">Save</button>
+            <button type="submit" id="share">Share</button>
+        </div>
+    </form>
+    <footer>
+        <p>&copy; 2024 King Culinary. All rights reserved.</p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+
+            $(".Navbar ul li a").click(function (e) {
+                e.preventDefault();
+                var targetUrl = $(this).attr("href");
+                $("body").animate({ opacity: 0, marginTop: "100px" }, 500, function () {
+                    window.location.href = targetUrl;
+                });
+            });
+            $("body").animate({ opacity: 1, marginTop: "0" }, 500);
+        });
+    </script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="JS/addrecipe.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

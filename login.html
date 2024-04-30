@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styling/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <form action="" class="login-form">
+            <h1 class="login-title">Login</h1>
+            <div class="login-content">
+                <div class="login-box">
+                    <i data-feather="mail" class="user-icon"></i>
+                    <div class="login-box-input">
+                        <input type="email" required class="login-input" id="login-email" placeholder=" ">
+                        <label for="login-email" class="login-label">Email</label>
+                    </div>
+                </div>
+                <div class="login-box">
+                    <i data-feather="lock" class="pw-icon"></i>
+                    <div class="login-box-input">
+                        <input type="password" required class="login-input" id="login-pass" placeholder=" ">
+                        <label for="login-pass" class="login-label">Password</label>
+                    </div>
+                </div>
+            </div>
+            <div class="login-check">
+                <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <p class="login-register">
+                Don't have an account? <a href="register.html">Register</a>
+            </p>
+        </form>
+    </div>
+    <script>
+        feather.replace()
+    </script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

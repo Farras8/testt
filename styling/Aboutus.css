@@ -1,0 +1,359 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  color: black;
+  background-color: #E4DAA9;
+}
+
+.imglogo {
+  height: 100px;
+  width: 200px;
+}
+
+.cmenu {
+  display: flex;
+  gap: 2rem;
+}
+
+#menu {
+  display: none;
+  color: black;
+}
+
+#user {
+  color: #494429;
+}
+
+#user:hover {
+  color: rgb(18, 189, 166);
+  background-color: #E4DAA9;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 6%;
+  background-color: rgba(177, 169, 128, 0.7);
+  border-bottom: 1px solid #9e9a9a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+}
+
+nav .Navbar li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+nav .Navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #494429;
+}
+
+nav .Navbar a:hover,
+nav .Navbar a.active {
+  font-weight: bold;
+  color: rgb(18, 189, 166);
+  background-color: #E4DAA9;
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.span-title {
+  color: rgb(18, 189, 166);
+}
+.span-title-2 {
+  background: linear-gradient(to right, rgb(18, 189, 166) 57%, #797355 43%);
+  -webkit-background-clip: text; /* Untuk membuat teks sesuai dengan latar belakang */
+  -webkit-text-fill-color: transparent; /* Menghilangkan warna teks */
+}
+
+.AboutUs {
+  padding: 11rem 7% 1.4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+}
+
+.AboutUs h2 {
+  color: #797355;
+  padding-bottom: 1rem;
+  font-size: 2em;
+}
+
+.contentABoutUs {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.imageAboutus img {
+  width: 400px;
+  height: 350px;
+}
+
+.contentImage {
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.contentImage p {
+  color: rgb(48, 44, 44);
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.contentImage p span {
+  font-weight: 500;
+  font-size: 1.15em;
+  color: #524d4d;
+}
+
+.founders {
+  margin-bottom: 2em;
+}
+
+.founders h2 {
+  color: #797355;
+  font-size: 2em;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+.founders .content {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 400px;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.imageContent {
+  height: 450px;
+  width: 300px;
+}
+
+.cardbody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(211, 204, 204, 0.6);
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cardbody h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.cardbody h6 {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.iconSosmed {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.iconSosmed .instagram:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.iconSosmed .linkedin:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.card:hover .cardbody {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.card:hover .imageContent {
+  filter: blur(5px);
+}
+
+.instagram {
+  color: black;
+
+}
+
+.linkedin {
+  color: black;
+}
+
+footer {
+  padding: 1em;
+  background-color: rgb(177, 169, 128);
+  margin-top: 1em;
+  text-align: center;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 80%;
+  }
+
+  .imageAboutus img {
+    width: 400px;
+    height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+
+  .imageAboutus img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #menu:hover {
+    transform: scale(1.2);
+  }
+
+  nav .Navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(198, 201, 204, 0.9);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  nav .Navbar.active {
+    right: 0;
+  }
+
+  nav .Navbar a {
+    color: black;
+    display: block;
+    margin: 1.75rem;
+    padding: 0.5rem;
+  }
+
+  .AboutUs .contentABoutUs {
+    flex-wrap: wrap;
+  }
+
+  .imageAboutus img {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #menu:hover {
+    transform: scale(1.2);
+  }
+
+  nav .Navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(198, 201, 204, 0.9);
+    width: 20rem;
+    height: 100vh;
+  }
+
+  nav .Navbar.active {
+    right: 0;
+  }
+
+  nav .Navbar a {
+    color: black;
+    display: block;
+    margin: 1.75rem;
+    padding: 0.5rem;
+  }
+
+  .AboutUs .contentABoutUs {
+    flex-wrap: wrap;
+  }
+
+  .imageAboutus img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 40%;
+  }
+
+  .imageAboutus img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .imageContent {
+    height: 300px;
+    width: 200px;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+  }
+}

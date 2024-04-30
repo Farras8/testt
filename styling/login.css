@@ -1,0 +1,165 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/chad-montano-lP5MCM6nZ5A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-form {
+    position: relative;
+    width: 30%;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    border: 2px solid var(--white-color);
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+.login-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+}
+
+.login-content,
+.login-box {
+    display: grid;
+}
+
+.login-content {
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.pw_icon,
+.user-icon {
+    font-size: 1.25rem;
+}
+
+.login-box {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
+    border-bottom: 2px solid white;
+}
+
+.login-input {
+    width: 100%;
+    padding-block: 0.8rem;
+    background: none;
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+}
+
+.login-box-input {
+    position: relative;
+}
+
+.login-label {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-weight: var(--font-medium);
+    transition: top 0.3s, font-size 0.3s;
+}
+
+.login-box:nth-child(2) input {
+    padding-right: 1.8rem;
+}
+
+.login-check,
+.login-check-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-check {
+    margin-bottom: 1.5rem;
+}
+
+.login-check-label,
+.login-forgot,
+.login-register {
+    font-size: var(--small-font-size);
+}
+
+.login-check-group {
+    column-gap: 0.5rem;
+}
+
+.login-check-input {
+    width: 16px;
+    height: 16px;
+}
+
+.login-forgot {
+    color: var(--white-color);
+}
+.login-check a {
+    text-decoration: none;
+}
+
+.login-check a:hover{
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.login-button:hover{
+    background-color: gray;
+}
+
+.login-register {
+    text-align: center;
+}
+
+.login-register a {
+    color: white;
+    font-weight: var(--font-medium);
+    text-decoration: none;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+/* Input focus move up label */
+.login-input:focus+.login-label {
+    top: -12px;
+    font-size: var(--small-font-size);
+}
+
+/* Input focus sticky top label */
+.login-input:not(:placeholder-shown).login-input:not(:focus)+.login-label {
+    top: -12px;
+    font-size: var(--small-font-size);
+}

@@ -1,0 +1,165 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.register {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/chad-montano-lP5MCM6nZ5A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.register-form {
+    position: relative;
+    width: 30%;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    border: 2px solid var(--white-color);
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+.register-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+}
+
+.register-content,
+.register-box {
+    display: grid;
+}
+
+.register-content {
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.pw_icon,
+.user-icon {
+    font-size: 1.25rem;
+}
+
+.register-box {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
+    border-bottom: 2px solid white;
+}
+
+.register-input {
+    width: 100%;
+    padding-block: 0.8rem;
+    background: none;
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+}
+
+.register-box-input {
+    position: relative;
+}
+
+.register-label {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-weight: var(--font-medium);
+    transition: top 0.3s, font-size 0.3s;
+}
+
+.register-box:nth-child(2) input {
+    padding-right: 1.8rem;
+}
+
+.register-check,
+.register-check-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register-check {
+    margin-bottom: 1.5rem;
+}
+
+.register-check-label,
+.register-forgot,
+.register-register {
+    font-size: var(--small-font-size);
+}
+
+.register-check-group {
+    column-gap: 0.5rem;
+}
+
+.register-check-input {
+    width: 16px;
+    height: 16px;
+}
+
+.register-forgot {
+    color: var(--white-color);
+}
+.register-check a {
+    text-decoration: none;
+}
+
+.register-check a:hover{
+    text-decoration: underline;
+}
+
+.register-button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.register-button:hover{
+    background-color: gray;
+}
+
+.register-register {
+    text-align: center;
+}
+
+.register-register a {
+    color: white;
+    font-weight: var(--font-medium);
+    text-decoration: none;
+}
+
+.register-register a:hover {
+    text-decoration: underline;
+}
+
+/* Input focus move up label */
+.register-input:focus+.register-label {
+    top: -12px;
+    font-size: var(--small-font-size);
+}
+
+/* Input focus sticky top label */
+.register-input:not(:placeholder-shown).register-input:not(:focus)+.register-label {
+    top: -12px;
+    font-size: var(--small-font-size);
+}
